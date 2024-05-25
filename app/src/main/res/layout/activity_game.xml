@@ -29,6 +29,18 @@
         android:textColor="#E61010"
         android:id="@+id/game_status_text" />
 
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left"
+        android:text="Back"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/back_ToMainPage_btn"
+        />
+
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

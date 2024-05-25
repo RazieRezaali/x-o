@@ -1,5 +1,6 @@
 package ir.shariaty.x_0
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,6 +26,10 @@ class GameActivity : AppCompatActivity() , View.OnClickListener {
         binding.btn6.setOnClickListener(this)
         binding.btn7.setOnClickListener(this)
         binding.btn8.setOnClickListener(this)
+
+        binding.backToMainPageBtn.setOnClickListener{
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
         binding.startGameBtn.setOnClickListener{
             startGame()
@@ -53,6 +58,8 @@ class GameActivity : AppCompatActivity() , View.OnClickListener {
 
             binding.startGameBtn.visibility = View.VISIBLE
 
+            binding.backToMainPageBtn.visibility = View.VISIBLE
+
             binding.gameStatusText.text = when(gameStatus){
                 GameStatus.CREATED ->{
                     binding.startGameBtn.visibility = View.GONE
@@ -63,6 +70,7 @@ class GameActivity : AppCompatActivity() , View.OnClickListener {
                 }
                 GameStatus.INPROGRESS ->{
                     binding.startGameBtn.visibility = View.GONE
+                    binding.backToMainPageBtn.visibility = View.GONE
                     currentPlayer + " turn"
                 }
                 GameStatus.FINISHED ->{
