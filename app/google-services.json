@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082795377809",
+    "project_id": "x-o-online-50112",
+    "storage_bucket": "x-o-online-50112.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082795377809:android:b319e07e8749b203172b30",
+        "android_client_info": {
+          "package_name": "ir.shariaty.x_0"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJPagQREJdZ7ETuYKJTdoE4sH_lMfZlZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

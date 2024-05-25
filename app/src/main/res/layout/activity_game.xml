@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="x-o"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Game Not Started!"
+        android:letterSpacing="0.08"
+        android:textColor="#E61010"
+        android:id="@+id/game_status_text" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="0"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_0"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="1"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="2"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="3"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="4"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="5"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_5"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="6"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_6"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="7"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_7"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:tag="8"
+            android:textSize="60sp"
+            tools:text=""
+            android:id="@+id/btn_8"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start Game"
+        android:layout_margin="20dp"
+        android:id="@+id/start_game_btn"
+        />
+
+</LinearLayout>
